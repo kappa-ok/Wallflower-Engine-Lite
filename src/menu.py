@@ -1,5 +1,6 @@
 import dearpygui.dearpygui as gui
 import GameObjectsEditor as GOE
+import GamePropertyEditor as GPE
 import glob
 
 def print_me(sender):
@@ -7,6 +8,9 @@ def print_me(sender):
 
 def GOEShow():
     GOE.createGOE()
+
+def GPEShow():
+    GPE.createGPE()
 
 with gui.viewport_menu_bar():
     with gui.menu(label="File"):
@@ -20,5 +24,6 @@ with gui.viewport_menu_bar():
 
     with gui.menu(label="Show"):
         gui.add_menu_item(label="Game Object Editor", callback=GOEShow)
+        gui.add_menu_item(label="Game Property Editor", callback=GPEShow)
 
     gui.add_menu_item(label="Help", callback=print_me)
