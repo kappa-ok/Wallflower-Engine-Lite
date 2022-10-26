@@ -4,10 +4,8 @@ import game
 
 def addGameObject():
     ObjectName = gui.get_value("ObjName")
-    ObjectX = gui.get_value("ObjX")
-    ObjectY = gui.get_value("ObjY")
-
-    print(ObjectName, ObjectX, ObjectY)
+    ObjectX = int(gui.get_value("ObjX"))
+    ObjectY = int(gui.get_value("ObjY"))
 
     game.gameObjects.append(f"NAME:{ObjectName}, X:{ObjectX}, Y:{ObjectY}")
 
