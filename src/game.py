@@ -14,8 +14,8 @@ def runGame():
 
     print("Game ran successfully \n")
 
-    print(gameName)
     print(gameObjects)
+
     pygame.init()
     pygame.display.init()
     pygame.display.set_mode(size=(WindowWidth, WindowHeight))
@@ -24,5 +24,10 @@ def runGame():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
+        
+        #for(i=0;i>len(gameObjects);i++):
+            #draw the objects to the screen
+            #print(i)
+        
     
 print("Game exited successfully")
