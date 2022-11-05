@@ -6,6 +6,12 @@ def saveGameProperties():
     game.gameName = gui.get_value("GameName")
     game.WindowWidth = int(gui.get_value("WINDOWWIDTH"))
     game.WindowHeight = int(gui.get_value("WINDOWHEIGHT"))
+    #game.runGame()
+
+def runGame():
+    game.gameName = gui.get_value("GameName")
+    game.WindowWidth = int(gui.get_value("WINDOWWIDTH"))
+    game.WindowHeight = int(gui.get_value("WINDOWHEIGHT"))
     game.runGame()
 
 def createGPE():
@@ -14,6 +20,7 @@ def createGPE():
         gui.add_input_text(tag="GameName", label="Game Name", source="string_value")
         gui.add_input_text(tag="WINDOWWIDTH", label="Window Width", source="int_value")
         gui.add_input_text(tag="WINDOWHEIGHT", label="Window Height", source="int_value")
+        gui.add_button(label="Run Game", callback=runGame)
 
     gui.set_value("GameName", "Game")
     gui.set_value("WINDOWWIDTH", 800)
