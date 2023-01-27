@@ -1,4 +1,4 @@
-## WALLFLOWER ENGINE
+## WALLFLOWER ENGINE LITE
 
 Wallflower Engine Lite is a 2D small scale version of Wallflower Engine made in Python.
 
